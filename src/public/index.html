@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="bg-transparent border-gray-200 dark:bg-gray-900 fixed w-full transition-all duration-300" id="navbar">
+    <nav class="bg-transparent border-gray-200 dark:bg-gray-900 fixed w-full transition-all duration-300 z-50" id="navbar">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">My Portofolio</span>
@@ -84,24 +86,85 @@
     <div class="h-screen dark:text-white">
         <img src="/src/public/images/pixel-bg.jpg" alt="" class="absolute -z-10">
         <div class="dark:bg-black/50 text-center h-screen pt-[20%] text-white">
-            <div class="p-10 rounded-lg bg-black/50 dark:bg-transparent">
-                <h1 class="text-3xl font-bold font-Lato">Hello, my name is</h1>
-                <h1 class="text-4xl font-bold font-Montserrat">Kina Mekoichi</h1>
+            <div class="p-10 bg-black/50 dark:bg-transparent">
+                <h1 class="text-4xl font-bold font-Lato">Hello, my name is</h1>
+                <h1 class="text-5xl font-bold font-Montserrat">Kina Mekoichi</h1>
             </div>
         </div>
     </div>
 
-    <div class="bg-gradient-to-b from-transparent to-slate-200 h-10"></div>
+    <div class="bg-gradient-to-b from-transparent to-slate-200 dark:to-slate-900 h-10"></div>
 
-    <div class="bg-slate-200 dark:text-white p-20">
-        <h1 class="font-Montserrat text-4xl font-bold">About me</h1>
-        <p class="font-Poppins text-xl mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error quo cumque eaque vero blanditiis eveniet consectetur aperiam? Corrupti quaerat esse, id natus vero dolorem iusto voluptate sapiente perspiciatis beatae atque porro. Rerum, qui? Sed, dolorum cupiditate delectus deserunt distinctio quia, deleniti architecto officia nemo vero maxime tempore soluta consequuntur aperiam officiis impedit natus laborum expedita. Dicta, possimus ab dolor error rem, nobis accusamus quasi iure maiores quidem, eveniet laboriosam doloremque. Totam, natus porro. Rerum blanditiis ab omnis eos tempora aliquam exercitationem dolor earum, rem doloremque maiores consectetur consequatur dicta nulla officia sint dignissimos suscipit culpa voluptas cumque excepturi molestiae?</p>
-    </div>
+    <div class="grid grid-cols-2 bg-slate-200 dark:text-white dark:bg-slate-900 p-20">
+        <div class="">
+            <div class="bg-white p-20 rounded-3xl border-4 border-dashed border-slate-900">
+                <h1 class="font-Montserrat text-4xl font-bold">About me</h1>
+                <p class="font-Poppins text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit error quo cumque eaque vero blanditiis eveniet consectetur aperiam? Corrupti quaerat
+                    esse, id natus vero dolorem iusto voluptate sapiente perspiciatis beatae atque porro. Rerum, qui?
+                    Sed, dolorum cupiditate delectus deserunt distinctio quia, deleniti architecto officia nemo vero
+                    maxime tempore soluta consequuntur aperiam officiis impedit natus laborum expedita. Dicta, possimus
+                    ab dolor error rem, nobis accusamus quasi iure maiores quidem, eveniet laboriosam doloremque. Totam,
+                    natus porro. Rerum blanditiis ab omnis eos tempora aliquam exercitationem dolor earum, rem
+                    doloremque maiores consectetur consequatur dicta nulla officia sint dignissimos suscipit culpa
+                    voluptas cumque excepturi molestiae?</p>
+            </div>
+        </div>
+        <div class="p-28">
+            <div class="loader">
+                <div>
+                    <ul>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 90 120">
+                                <path
+                                    d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                                </path>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <div class="mb-96"></div>
+            <div class="mb-96"></div>
 
-    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="main.js"></script>
+            <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+            <script src="main.js"></script>
 </body>
 
 </html>
