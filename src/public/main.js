@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const html = document.querySelector("html");
-const themeBtn = document.getElementById("theme-toggle");
+const html = document.querySelector('html');
+const themeBtn = document.getElementById('theme-toggle');
 
 if(localStorage.getItem("mode") == "dark") {
     darkMode();
