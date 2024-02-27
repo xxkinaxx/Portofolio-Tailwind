@@ -407,3 +407,8 @@
    .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
+.home{
+  background-image: url(/src/public/images/pixel-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
