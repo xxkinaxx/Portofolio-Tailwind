@@ -40,3 +40,8 @@ function lightMode () {
     html.classList.remove("dark");
     localStorage.setItem("mode", "light");
 };
+
+window.addEventListener('load', () => {
+    document.getElementById('loadingScreen').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+});
