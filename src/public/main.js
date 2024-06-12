@@ -42,6 +42,5 @@ function lightMode () {
 };
 
 window.addEventListener('load', () => {
-    document.getElementById('loadingScreen').classList.add('hidden');
-    document.getElementById('mainContent').classList.remove('hidden');
+    document.getElementById('loadingScreen').style.display = 'none';
 });

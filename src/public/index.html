@@ -47,28 +47,28 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-            <div class="w-full md:block md:w-auto" id="navbar-default">
+            <div class="w-full md:block md:w-auto hidden" id="navbar-default">
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                     <li>
-                        <a href="#"
+                        <a href="#home"
                             class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#skill"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skill</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#projects"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#certificate"
                             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Certificate</a>
                     </li>
                 </ul>
@@ -98,7 +98,7 @@
         </div>
     </nav>
 
-    <div class="h-screen text-white home flex items-center justify-center" id="about">
+    <div class="h-screen text-white home flex items-center justify-center" id="home">
         <div class="text-white w-full h-full flex items-center dark:bg-black/50 duration-150">
             <div class="p-10 bg-black/50 dark:bg-transparent text-center w-full duration-150">
                 <h1 class="text-4xl font-bold font-Lato">Hello, my name is</h1>
@@ -107,9 +107,11 @@
         </div>
     </div>
 
-    <div class="bg-gradient-to-b from-transparent via-slate-200 to-slate-200 h-20 -mt-20 dark:via-slate-900 dark:to-slate-900"></div>
+    <div
+        class="bg-gradient-to-b from-transparent via-slate-200 to-slate-200 h-20 -mt-20 dark:via-slate-900 dark:to-slate-900">
+    </div>
 
-    <div class="bg-slate-200 dark:text-white dark:bg-slate-900 p-20 gap-10">
+    <div class="bg-slate-200 dark:text-white dark:bg-slate-900 p-20 gap-10" id="about">
         <h1 class="font-Montserrat text-7xl font-bold col-span-2 text-center mb-10">About me</h1>
 
         <ul class="flex flex-wrap text-lg font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800 mb-10"
@@ -133,181 +135,181 @@
             </li>
         </ul>
 
-        <div class="card">
-            <div
-                class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 card2 p-10">
-                <div id="defaultTabContent">
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about2" role="tabpanel"
-                        aria-labelledby="about-tab">
-                        <div class="flex p-2 gap-1">
-                            <div class="circle">
-                                <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+        <div class="row grid lg:grid-cols-3 gap-20 lg:h-96">
+            <div class="card col-span-2">
+                <div
+                    class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 card2 p-10 h-full flex flex-row items-center">
+                    <div id="defaultTabContent">
+                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about2" role="tabpanel"
+                            aria-labelledby="about-tab">
+                            <div class="flex p-2 gap-1">
+                                <div class="circle">
+                                    <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
                             </div>
-                            <div class="circle">
-                                <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
-                            <div class="circle">
-                                <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
+                            <p class="font-Poppins text-3xl mt-2 text-center">Welcome to my portofolio! I'm Eko Pandu, and
+                                I'm thrilled to have
+                                you here. Let me introduce myself.</p>
                         </div>
-                        <p class="font-Poppins text-3xl mt-2 text-center">Welcome to my portofolio! I'm Eko Pandu, and
-                            I'm thrilled to have
-                            you here. Let me introduce myself.</p>
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services2" role="tabpanel"
-                        aria-labelledby="services-tab">
-                        <div class="flex p-2 gap-1">
-                            <div class="circle">
-                                <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services2" role="tabpanel"
+                            aria-labelledby="services-tab">
+                            <div class="flex p-2 gap-1">
+                                <div class="circle">
+                                    <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
                             </div>
-                            <div class="circle">
-                                <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
-                            <div class="circle">
-                                <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
+                            <p class="font-poppins text-2xl mt-5 font-bold">Who Am I?</p>
+                            <p class="font-Poppins text-xl mt-2">I'm a beginner software programmer from IDN Boarding School
+                                Sentul,
+                                where I studying, practice, and improve my skills with challenges that I faced here.</p>
                         </div>
-                        <p class="font-poppins text-2xl mt-5 font-bold">Who Am I?</p>
-                        <p class="font-Poppins text-xl mt-2">I'm a beginner software programmer from IDN Boarding School
-                            Sentul,
-                            where I studying, practice, and improve my skills with challenges that I faced here.</p>
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="statistics2" role="tabpanel"
-                        aria-labelledby="statistics-tab">
-                        <div class="flex p-2 gap-1">
-                            <div class="circle">
-                                <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="statistics2" role="tabpanel"
+                            aria-labelledby="statistics-tab">
+                            <div class="flex p-2 gap-1">
+                                <div class="circle">
+                                    <span class="bg-teal-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
+                                <div class="circle">
+                                    <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
+                                </div>
                             </div>
-                            <div class="circle">
-                                <span class="bg-orange-500 inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
-                            <div class="circle">
-                                <span class="bg-indigo-500 box inline-block center w-3 h-3 rounded-full"></span>
-                            </div>
+                            <p class="font-poppins text-2xl mt-5 font-bold">What Drives Me?</p>
+                            <p class="font-Poppins text-xl mt-2">
+                                I'm deeply passionate about Software Development. Whether it's simple landing page website
+                                or an actuall working website with database and so on, I'm always eager to dive in, learn
+                                more, and make a difference.</p>
                         </div>
-                        <p class="font-poppins text-2xl mt-5 font-bold">What Drives Me?</p>
-                        <p class="font-Poppins text-xl mt-2">
-                            I'm deeply passionate about Software Development. Whether it's simple landing page website
-                            or an actuall working website with database and so on, I'm always eager to dive in, learn
-                            more, and make a difference.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-span-2 lg:col-span-1 lg:ms-auto rounded-xl lg:rounded-full overflow-hidden h-96">
+                <img src="image/profile.png" alt="" class="w-full">
             </div>
         </div>
     </div>
 
-    <div class="bg-slate-400 p-20 dark:bg-slate-700">
+    <div class="bg-slate-400 p-20 dark:bg-slate-700 dark:text-white" id="skill">
         <h1 class="font-sans text-7xl text-center font-bold mb-10">Skills</h1>
         <p class="font-Montserrat text-2xl text-center mb-3">These are some of my skills that can be usefull for you (if
             you are searching for it)</p>
         <div class="bg-slate-800 p-20 gap-7 justify-around rounded-xl grid md:grid-cols-2 lg:grid-cols-3">
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
-                <img class="w-full h-auto" src="images/logo html.png" alt="Placeholder Image">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
+                <img class="w-full h-auto bg-fixed" src="images/logo html.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 px-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">HTML</h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-sm text-white text-left">In HTML, skills that need to be mastered include document structure, use of basic tags such as headings, paragraphs, links, images, lists and tables. Understand important attributes such as `id`, `class`, `src`, and `href`, as well as form elements such as input, textarea, and button. Use of semantic HTML (header, footer, article) and multimedia embedding (video, audio) as well as integration of CSS and JavaScript via link, and script are also important.
+                        </p>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/logo css.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 px-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">CSS</h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-sm text-white text-left">In CSS, skills that need to be mastered include using selectors (tags, classes, ids), basic properties such as `color`, `margin`, `padding`, and `font-size`, as well as understanding the box model. Knowledge of layouts with `flexbox` and `grid`, positioning techniques, and media queries for responsive design is also important. Additionally, mastering animations, transitions, and managing external stylesheets is necessary.</p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/java logo.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 px-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Javascript
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-sm text-white text-left">In JavaScript, skills that need to be mastered include variables, data types, operators, conditions, loops, and functions. Understand DOM manipulation, event handling, and asynchronous concepts such as `Promises` and `async/await`. Knowledge of JSON, APIs, as well as ES6+ features such as `let`, `const`, and arrow functions is also important.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/desain logo 2.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Digital &
                             Traditional design
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-white text-sm text-left">I have a diverse background in graphic and traditional design. Proficient with Adobe Photoshop, Illustrator, and InDesign, I create compelling digital designs like logos and marketing materials. My traditional design skills in drawing and painting give me a strong foundation in composition, color theory, and typography. This blend of digital and manual techniques ensures my work is both unique and impactful.</p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/php logo.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">PHP
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-white text-sm text-left">I master PHP, including developing dynamic web applications, database manipulation with MySQL, and using frameworks such as Laravel. I have experience in handling forms, input validation, and managing sessions and cookies. Additionally, I can implement API and external service integration, as well as optimize PHP code for better performance.</p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/bootsrap logo.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Bootstrap
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-white text-sm text-left">I mastered Bootstrap, including the use of a grid system for responsive layout, ready-to-use components such as buttons, navbars, and cards, as well as CSS utilities for quick customization. I am also experienced in Bootstrap theme customization to meet specific design needs and enhance user experience on various devices.</p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/tailwind logo.jpg" alt="Placeholder Image">
-                <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                <div 
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Tailwind
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-white text-sm text-left">I mastered Tailwind CSS, including the use of utility classes for quick customization of the appearance, creating responsive designs, and managing spacing, typography, and colors. I am also experienced in customizing Tailwind configurations to meet specific design needs, allowing for the creation of consistent and efficient user interfaces.</p>
                     </div>
                 </div>
             </div>
-            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-hidden">
+            <div class="group relative max-w-sm mx-auto rounded-2xl bg-white flex items-center overflow-x-hidden">
                 <img class="w-full h-auto" src="images/laravel logo.png" alt="Placeholder Image">
                 <div
-                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                    class="absolute inset-0 flex items-center justify-center bg-slate-700 bg-opacity-70 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-10">
                     <div
                         class="text-lg bg-opacity-85 font-semibold transform transition-transform duration-300 text-center">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">laravel
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Laravel
                         </h5>
-                        <p class="mb-3 font-normal text-white dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-white text-sm text-left">I master Laravel, including creating web applications using MVC architecture, routing management, and API development. I have experience with Eloquent ORM for database manipulation, use of Blade for templating, and implementation of authentication and authorization features. Additionally, I can manage database migration, background work with queues, and configuration customization to meet project-specific needs.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-slate-200 dark:text-white dark:bg-slate-900 p-20">
+    <div class="bg-slate-200 dark:text-white dark:bg-slate-900 p-20" id="projects">
         <h1 class="font-sans text-7xl text-center font-bold mb-10">Projects</h1>
         <p class="font-Montserrat text-2xl text-center mb-3">These is some of projects that i already done. Most of it
             is a school project but, it's pretty impressive</p>
@@ -326,8 +328,13 @@
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         Landing site about Mihoyo, my favorites game developer company.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/logo html.png" alt="" class="h-8">
+                        <img src="images/logo css.png" alt="" class="h-8">
+                    </div>
                 </div>
-                <div class="p-6 pt-0">
+                <div class="p-6 pt-0 mt-auto">
                     <a data-ripple-light="true" href="https://mihoyo-bootstrap.netlify.app"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
@@ -356,8 +363,14 @@
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         Website that contain praying schedule, name of surah in Al-Qur'an, and the name of Allah.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/logo html.png" alt="" class="h-8">
+                        <img src="images/logo css.png" alt="" class="h-8">
+                        <img src="images/php logo.png" alt="" class="h-8">
+                    </div>
                 </div>
-                <div class="p-6 pt-0">
+                <div class="p-6 pt-0 mt-auto">
                     <a data-ripple-light="true" href="https://xxkinaxx.github.io/Al-Kareem/"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
@@ -386,8 +399,14 @@
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         It's just a portofolio that I made in the past. But if you want to see it, go on.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/logo html.png" alt="" class="h-8">
+                        <img src="images/logo css.png" alt="" class="h-8">
+                        <img src="images/java logo.png" alt="" class="h-8">
+                    </div>
                 </div>
-                <div class="p-6 pt-0">
+                <div class="p-6 pt-0 mt-auto">
                     <a data-ripple-light="true" href="https://ekopanduportofolio.netlify.app"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
@@ -416,6 +435,11 @@
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         A random landing page that I made using Tailwind.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/logo html.png" alt="" class="h-8">
+                        <img src="images/tailwind logo.jpg" alt="" class="h-8">
+                    </div>
                 </div>
                 <div class="p-6 pt-0 mt-auto">
                     <a data-ripple-light="true" href="https://out-reality.netlify.app"
@@ -436,7 +460,7 @@
                 class="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md group hover:-translate-y-5 duration-150">
                 <div
                     class="relative mx-4 -mt-6 h-50 object-fill overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 group-hover:-translate-y-5 duration-150">
-                    <img src="image/image3.png" alt="">
+                    <img src="image/image5.png" alt="">
                 </div>
                 <div class="p-6">
                     <h5
@@ -446,9 +470,13 @@
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         A news app using laravel. You can find some news here eventhough it's not actually happening.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/laravel logo.png" alt="" class="h-8">
+                    </div>
                 </div>
                 <div class="p-6 pt-0 mt-auto">
-                    <a data-ripple-light="true" href="#"
+                    <a data-ripple-light="true" href="http://news.mekoichi.my.id/"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
                         <svg class="w-5 h-5 ms-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -477,9 +505,13 @@
                         It's my first e-commerce website using laravel. You can find some products here, and you can
                         bought it, but it will never arrived to your home.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/laravel logo.png" alt="" class="h-8">
+                    </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <a data-ripple-light="true" href="#"
+                <div class="p-6 pt-0 mt-auto">
+                    <a data-ripple-light="true" href="http://toko.mekoichi.my.id/"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
                         <svg class="w-5 h-5 ms-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -505,11 +537,16 @@
                         Todo List
                     </h5>
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                        A todo list website where you can put any activities that you want to do in the future. You can even put the deadline and the status here.
+                        A todo list website where you can put any activities that you want to do in the future. You can
+                        even put the deadline and the status here.
                     </p>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 mt-3">Created with:</span>
+                    <div class="flex gap-4 mt-3">
+                        <img src="images/laravel logo.png" alt="" class="h-8">
+                    </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <a data-ripple-light="true" href="#"
+                <div class="p-6 pt-0 mt-auto">
+                    <a data-ripple-light="true" href="http://todo-list.mekoichi.my.id/"
                         class="rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 hover:-translate-y-3 duration-150 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center">
                         see the website
                         <svg class="w-5 h-5 ms-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -526,8 +563,14 @@
         </div>
     </div>
 
-    <div class="bg-slate-400 p-20 dark:bg-slate-700">
-
+    <div class="bg-slate-400 p-20 dark:bg-slate-700" id="certificate">
+        <h1 class="font-sans text-7xl text-center font-bold mb-10">Certificate</h1>
+        <div class="grid lg:grid-cols-2 justify-around gap-20">
+            <img src="image/certificate 1.jpg" alt="">
+            <img src="image/certificate 2.jpg" alt="">
+            <img src="image/certificate 3.jpg" alt="">
+            <img src="image/certificate 4.jpg" alt="">
+        </div>
     </div>
 
     <!-- Footer Section -->
@@ -537,43 +580,48 @@
                 <!-- Contact Information -->
                 <div class="mb-6 md:mb-0">
                     <h2 class="text-lg font-semibold">Contact Me</h2>
-                    <p class="mt-2">Email: <a href="mailto:yourname@example.com"
-                            class="text-blue-400">ekopandu088@gmail.com</a></p>
+                    <p class="mt-2">Email: <a href="" class="text-blue-400">ekopandu088@gmail.com</a></p>
                     <p class="mt-1">Phone: +62889-7567-9243</p>
                 </div>
                 <!-- Social Media Links -->
                 <div class="mb-6 md:mb-0">
                     <h2 class="text-lg font-semibold">Follow Me</h2>
                     <div class="flex mt-2 space-x-4">
-                        <a href="https://www.facebook.com/yourprofile" class="text-blue-600 hover:text-blue-400"><svg
-                                class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M22 12c0-5.514-4.486-10-10-10S2 6.486 2 12c0 5.01 3.657 9.128 8.438 9.878V15.27h-2.54v-3.271h2.54v-2.49c0-2.506 1.493-3.887 3.771-3.887 1.094 0 2.24.194 2.24.194v2.475h-1.262c-1.243 0-1.63.77-1.63 1.56v1.944h2.773l-.443 3.271h-2.33V21.88C18.343 21.13 22 17.01 22 12z">
-                                </path>
-                            </svg></a>
-                        <a href="https://www.twitter.com/yourprofile" class="text-blue-400 hover:text-blue-300"><svg
-                                class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M22.46 6.004c-.77.34-1.59.57-2.46.67.89-.53 1.56-1.36 1.88-2.36-.83.49-1.75.84-2.72 1.03-.78-.83-1.88-1.34-3.1-1.34-2.37 0-4.28 1.92-4.28 4.28 0 .34.04.67.11.98-3.56-.18-6.73-1.88-8.84-4.47-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.83 1.92 3.6-.71-.02-1.38-.22-1.97-.54v.05c0 2.1 1.49 3.85 3.45 4.25-.36.1-.74.16-1.13.16-.28 0-.54-.03-.81-.08.55 1.72 2.13 2.97 4.01 3.01-1.47 1.15-3.33 1.83-5.34 1.83-.35 0-.7-.02-1.05-.06 1.9 1.22 4.15 1.93 6.57 1.93 7.87 0 12.17-6.52 12.17-12.17 0-.18-.01-.36-.02-.54.83-.6 1.55-1.36 2.12-2.23z">
-                                </path>
-                            </svg></a>
-                        <a href="https://www.linkedin.com/in/yourprofile" class="text-blue-700 hover:text-blue-500">
-                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                        <a href="https://www.instagram.com/knightplaye_123/"
+                            class="text-blue-400 hover:text-blue-300"><svg viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
-                                    <path fill="#0A66C2"
-                                        d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
-                                    </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                        fill="#ffffff"></path>
+                                    <path
+                                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                        fill="#ffffff"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                        fill="#ffffff"></path>
                                 </g>
                             </svg>
-                        </a>
-                        <a href="https://www.github.com/yourprofile" class="text-gray-400 hover:text-gray-300"><svg
-                                class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.305 3.438 9.8 8.207 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.042-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.204.085 1.837 1.235 1.837 1.235 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.124-.304-.536-1.526.118-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.983-.4 3.003-.405 1.02.005 2.043.138 3.003.405 2.29-1.552 3.297-1.23 3.297-1.23.655 1.65.243 2.872.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.622-5.475 5.92.43.372.824 1.102.824 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.577C20.565 22.092 24 17.6 24 12.297 24 5.67 18.627.297 12 .297z">
-                                </path>
-                            </svg></a>
+                            <a href="https://www.linkedin.com/in/eko-pandu-9172a7284/"
+                                class="text-blue-700 hover:text-blue-500">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill="#0A66C2"
+                                            d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/xxkinaxx" class="text-gray-400 hover:text-gray-300"><svg
+                                    class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.305 3.438 9.8 8.207 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.042-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.204.085 1.837 1.235 1.837 1.235 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.124-.304-.536-1.526.118-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.983-.4 3.003-.405 1.02.005 2.043.138 3.003.405 2.29-1.552 3.297-1.23 3.297-1.23.655 1.65.243 2.872.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.622-5.475 5.92.43.372.824 1.102.824 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.577C20.565 22.092 24 17.6 24 12.297 24 5.67 18.627.297 12 .297z">
+                                    </path>
+                                </svg></a>
                     </div>
                 </div>
             </div>
